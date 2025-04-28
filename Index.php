@@ -12,25 +12,9 @@
     <h1>Strong Password Generator</h1>
     <h2>Genera una password sicura</h2>
 
-
-    <!-- Funzione di stringhe random -->
+    <!-- Funzione di generazione password -->
     <?php
-    function generateRandomString($length = 10)
-    {
-        // Set di caratteri
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#%&*+-=?[]{}';
-        $charactersLength = strlen($characters);
-        $randomString = '';
-
-        for ($i = 0; $i < $length; $i++) {
-            $randomString .= $characters[random_int(0, $charactersLength - 1)];
-        }
-
-        return $randomString;
-    }
-
-    // Echo the random string.
-    echo generateRandomString();
+    include './function.php';
     ?>
 
     <!-- Form -->
