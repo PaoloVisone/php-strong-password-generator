@@ -47,6 +47,7 @@ session_start()
             </label>
         </fieldset>
 
+        <!-- Al click del bottone, il form manda i dati a password.php -->
         <button type="submit">Genera password</button>
 
     </form>
