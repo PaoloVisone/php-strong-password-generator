@@ -1,10 +1,16 @@
+<?php
+
+session_start()
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Strong Password Generator</title>
 </head>
 
 <body>
@@ -12,13 +18,8 @@
     <h1>Strong Password Generator</h1>
     <h2>Genera una password sicura</h2>
 
-    <!-- Funzione di generazione password -->
-    <?php
-    include './function.php';
-    ?>
-
     <!-- Form -->
-    <form method="GET">
+    <form method="GET" action="result.php">
 
         <label for="lunghezza">Lunghezza della password:</label>
         <input type="number" name="lunghezza" id="lunghezza" min="1" required>
