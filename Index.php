@@ -10,6 +10,7 @@ session_start()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Strong Password Generator</title>
 </head>
 
@@ -22,7 +23,7 @@ session_start()
     <form method="GET" action="result.php">
 
         <label for="lunghezza">Lunghezza della password:</label>
-        <input type="number" name="lunghezza" id="lunghezza" min="1" required>
+        <input type="number" name="lunghezza" id="lunghezza" min="1" max='1000' required>
 
         <fieldset>
             <legend>Vuoi consentire la ripetizione dei caratteri?</legend>

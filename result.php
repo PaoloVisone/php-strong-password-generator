@@ -21,6 +21,7 @@ $_SESSION['password'] = $password;
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Password Generata</title>
 </head>
 
