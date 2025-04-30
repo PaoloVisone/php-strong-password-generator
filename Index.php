@@ -22,9 +22,9 @@ session_start();
     <!-- Form -->
     <form method="GET" action="result.php">
 
-        <label for="lunghezza">Lunghezza della password:</label>
-        <input type="number" name="lunghezza" id="lunghezza" min="1" max='50' required>
-
+        <label for="lunghezza">Lunghezza della password:
+            <input type="number" name="lunghezza" id="lunghezza" min="1" max='50' required>
+        </label>
         <fieldset>
             <legend>Vuoi consentire la ripetizione dei caratteri?</legend>
             <label for="ripetizione_si">
